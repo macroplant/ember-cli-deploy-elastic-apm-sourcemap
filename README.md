@@ -1,2 +1,2 @@
-# ember-cli-deploy-elastic-apm-sourcemap
-Ember Deploy ElasticAPM SourceMap Plugin
+# ember-cli-deploy-elastic-apm-sourcemaps
+Deploy sourcemaps to elastic apm server
