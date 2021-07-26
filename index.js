@@ -47,6 +47,7 @@ module.exports = {
           secret,
           token,
           publicPath,
+          logger=this,
         });
 
         return elasticApm.publishSourceMaps({ distDir, sourceMapPattern });
