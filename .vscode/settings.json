@@ -1,0 +1,20 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.enabled": true,
+  "cSpell.enabledLanguageIds": [
+    "handlebars",
+    "javascript",
+    "json",
+    "markdown",
+    "plaintext",
+    "text",
+    "typescript",
+    "yml"
+  ],
+  "debug.console.fontSize": 10,
+  "editor.fontFamily": "\"NotoMono Nerd Font Mono\", Monaco, 'Courier New', monospace"
+}
