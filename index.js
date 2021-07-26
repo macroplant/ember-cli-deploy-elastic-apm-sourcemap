@@ -21,14 +21,14 @@ module.exports = {
       requiredConfig: [
         'serviceName',
         'serviceVersion',
-        'serverURL',
+        'serverUrl',
         'publicPath',
       ],
 
       upload: function (/* context */) {
         var serviceName = this.readConfig('serviceName');
         var serviceVersion = this.readConfig('serviceVersion');
-        var serverURL = this.readConfig('serverURL');
+        var serverUrl = this.readConfig('serverUrl');
         var secret = this.readConfig('secret');
         var token = this.readConfig('token');
         var publicPath = this.readConfig('publicPath');
@@ -43,7 +43,7 @@ module.exports = {
         var elasticApm = new ElasticApm({
           serviceName,
           serviceVersion,
-          serverURL,
+          serverUrl,
           secret,
           token,
           publicPath,
