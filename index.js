@@ -36,7 +36,7 @@ module.exports = {
         var distDir = this.readConfig('distDir');
         var sourceMapPattern = this.readConfig('sourceMapPattern');
 
-        this.log('Preparing to upload source maps to Elastic APM', {
+        this.log('preparing to upload source maps', {
           verbose: true,
         });
 
@@ -50,7 +50,10 @@ module.exports = {
           logger: this,
         });
 
-        return elasticApm.publishSourceMaps({ distDir, sourceMapPattern });
+        return elasticApm.publishSourceMaps({
+          distDir,
+          sourceMapPattern,
+        });
       },
     });
 
