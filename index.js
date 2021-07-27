@@ -25,7 +25,7 @@ module.exports = {
         'publicPath',
       ],
 
-      upload: function (/* context */) {
+      upload: function (context) {
         var serviceName = this.readConfig('serviceName');
         var serviceVersion = this.readConfig('serviceVersion');
         var serverUrl = this.readConfig('serverUrl');
@@ -47,7 +47,7 @@ module.exports = {
           secret,
           token,
           publicPath,
-          logger=this,
+          logger: this,
         });
 
         return elasticApm.publishSourceMaps({ distDir, sourceMapPattern });
